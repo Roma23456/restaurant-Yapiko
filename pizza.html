@@ -181,6 +181,82 @@
             background-color: #0000CD;
             color: white;
         }
+        .nav-icons {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-right: 20px;
+            position: relative;
+            left: -20px;
+            top: 17px;
+            display: inline-block;
+        }
+        .nav-icons a {
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            position: relative;
+        }
+        .nav-icons a:hover {
+            color: #0000CD;
+        }
+        .cart-icon {
+            position: relative;
+            left: -26px;
+            top: 17px;
+            display: inline-block;
+        }
+        .cart-count {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background-color: green;
+            color: white;
+            padding: 3px 7px;
+            border-radius: 50%;
+            font-size: 13px;
+        }
+        .cart-icon svg,
+        .nav-icons svg {
+            width: 32px;
+            height: 32px;
+        }
+        #dropdown-products {
+            display: none;
+            background-color: green;
+        }
+        #menu-products:hover #dropdown-products {
+            display: block;
+        }
+        #dropdown-products li a {
+            text-decoration: none;
+            color: #8B008B;
+        }
+        .menu-icon {
+            position: fixed;
+            top: 14px; /* Raise it higher; adjust as needed */
+            right: auto;
+            left: 1427px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .menu-icon span {
+            display: block;
+            width: 35px;
+            height: 5px;
+            margin: 6px 0;
+            background-color: green; /* Change the color to black */
+            transition: 0.4s;
+        }
+        @media (max-width: 700px) {
+            .info {
+                text-align: center;
+                display: block;
+            }
+        }
+
     </style>
 </head>
 <body>
