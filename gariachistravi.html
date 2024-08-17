@@ -367,15 +367,17 @@
             color: #FFFF00; /* Можно добавить любой цвет, который вам нравится */
         }
         /* Стили для экранов шириной до 600px (мобильные устройства) */
-        @media only screen and (max-width: 600px) {
+        /* Стили для экранов шириной до 400px */
+        @media only screen and (max-width: 400px) {
             body {
-                font-size: 14px;
+                font-size: 16px; /* Можно настроить размер шрифта для удобства чтения на Poco F3 */
             }
             .container {
                 width: 100%;
-                padding: 10px;
+                padding: 15px; /* Увеличенный отступ для небольшого экрана */
             }
         }
+
 
     </style>
 </head>
