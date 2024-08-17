@@ -151,8 +151,36 @@
         }
         .sushi-card .add-to-cart:hover {
             background-color: #ff4500;
-
-
+        nav {
+            background-color: #FFFF00;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            position: fixed; /* Фиксированное позиционирование */
+            top: 0; /* Прикрепить к верху */
+            width: 100%; /* На всю ширину экрана */
+            z-index: 1000; /* Установить высокий z-index для видимости над другими элементами */
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 18px 20px;
+            text-decoration: none;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #0000CD;
+            color: white;
+        }
     </style>
 </head>
 <body>
